@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakshya Mittal - Portfolio design</title>
+    <script src="https://kit.fontawesome.com/648afce5a4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet " href="style.css">
+
+    <style>
+        /* responsivenessssssssssssssssss */
+        /* media queries */
+        @media (max-width:1012px) {
+            nav {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+
+        @media (max-width:960px) {
+
+            #home,
+            #home_content {
+                flex-direction: column;
+            }
+
+            #home_text {
+                padding-left: 0px;
+                max-width: 90vw;
+                max-height: 350px;
+                /* padding-top: 50px; */
+            }
+
+            /* #home_content #img_div {} */
+
+            #skills {
+                height: fit-content;
+                color: white;
+                display: flex;
+
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+                background-color: rgb(20, 20, 20);
+            }
+
+            #skills #main_div {
+                border: 1px solid;
+                color: black;
+                font-weight: bold;
+                padding: 10px;
+                height: fit-content;
+                width: 70vw;
+                margin: 0;
+            }
+
+            #sk_imgs {
+                display: grid;
+                min-width: fit-content;
+                grid-template-columns: auto auto auto;
+                gap: 10px;
+                width: auto;
+            }
+        }
+
+        @media (max-width:670px) {
+
+            .language img {
+                width: 10vw;
+            }
+
+            #about {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            #list li {
+                padding-left: 2vw;
+            }
+
+            #about #content {
+                min-width: auto;
+                max-width: auto;
+            }
+
+            #img_div img {
+                height: 50vw;
+            }
+
+
+            #contact_info h1 {
+                font-size: 7vw;
+                padding-bottom: 20px;
+                border-bottom: 1px solid white;
+                padding: 0px 0px 0px 0px;
+            }
+
+            #cntct_lc_ul li {
+                font-size: 3vw;
+                padding: 0;
+                /* border-left: 0p; */
+            }
+
+            #cntct_lc_ul {
+                border: none;
+            }
+
+            #skills {
+                font-size: 3vw;
+            }
+
+            #heading {
+                font-size: 2.5vw;
+            }
+
+            #home_text {
+                padding-left: 0px;
+                max-width: 90vw;
+                min-width: 90vw;
+                /* max-height: ; */
+                height: auto;
+            }
+
+            #body h4 {
+                font-size: 15px;
+                /* max-height: non; */
+            }
+
+            #contact_info {
+                display: block;
+                justify-content: center;
+                align-items: center;
+            }
+
+        }
+
+        @media (max-width:475px) {
+
+            #contact h1 {
+                width: 100vw;
+                padding: 30px;
+            }
+
+            #contact {
+                display: flex;
+                height: auto;
+                padding-top: 0px;
+                /* padding-bottom: 0; */
+            }
+
+            #cntct_lc_ul {
+                margin-left: 18px;
+            }
+
+            #cntct_lc_ul li {
+                font-size: 4vw;
+            }
+
+            .space_div {
+                display: none;
+            }
+
+            
+
+            #list {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <nav>
+            <ul type="none" id="home_name_top_left">
+                <li><a href="#">LAKSHYA MITTAL</a></li>
+            </ul>
+            <ul type="none" id="list">
+                <li>
+                    <a href="#home">HOME</a>
+                </li>
+                <li>
+                    <a href="#about">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#contact">CONTACT</a>
+                </li>
+                <li>
+                    <a href="#skills">SKILLS</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="home">
+            <div id="home_content">
+                <div id="img_div">
+                    <img src="lakshya.jpg" alt="profile photo image" oncontextmenu="return false;">
+                </div>
+                <div id="home_text">
+                    <div id="heading">
+                        <h5 style="font-weight: 100;">welcome to my world</h5>
+                        <h1>Hi, I am </h1>
+                        <h1 id="name">LAKSHYA MITTAL</h1>
+                        <h2> a BCA student</h2>
+
+                    </div>
+                    <br>
+                    <div id="body">
+                        <h4 style="font-weight: 100;">
+                            "Step into a world where pixels tell stories, and code weaves magic. My portfolio is a
+                            canvas
+                            of innovation, a tapestry of design, and a testament to boundless possibilities in the
+                            digital realm."
+                        </h4>
+                    </div>
+                    <br><br>
+                    <a href="#contact">CONTACT</a>
+                    <a href="#about">KNOW MORE</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="about">
+
+
+            <div id="content">
+                <h1>About Me
+                    <i class="fa-solid fa-tag"></i>
+                </h1>
+
+                <br>
+                I'm
+                fascinated by web development,
+                Graphic designing and video editing and am constantly seeking opportunities to expand my knowledge.
+                <br><br><br>
+
+                Education : <br><br>
+                <div id="education">
+                    <div id="head">Guru Gobind Singh Indraprastha University</div>
+                    <div id="content">
+
+                        Banarsidas Chandiwala Institute of Information Technology
+                        <br>
+                        <br>
+                        Degree : Baecholer's of computer application <br>
+                        Specialization : AI & ML <br>
+                        Status : pursuing (2nd year)
+                    </div>
+                </div>
+                <br>
+                Experience
+                <br><br>
+
+                I'm currently doing an internship at Bharat Intern, this internship is a virtual internship on web
+                development, it is a one month virtual internship
+            </div>
+        </div>
+
+        <div id="skills">
+            <div id="main_div_sk">
+                <h1>Skills <i class="fa-solid fa-pen-nib"></i></h1>
+                <br><br>
+                <div id="main_div">
+                    <h2>Languages and Databases</h2>
+                    <div id="sk_imgs">
+                        <div class="language">
+                            <img src="skills_imgs/html.png">
+                            HTML
+                        </div>
+                        <div class="language">
+                            <img src="skills_imgs/css.png">
+                            CSS
+                        </div>
+                        <div class="language">
+                            <img src="skills_imgs/js.png">
+                            JAVASCRIPT
+                        </div>
+                        <div class="language">
+                            <img src="skills_imgs/c.png">
+                            C
+                        </div>
+                        <div class="language">
+                            <img src="skills_imgs/mysql.png">
+                            MY SQL
+                        </div>
+                        <div class="language">
+                            <img src="skills_imgs/php.png">
+                            PHP
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="contact">
+            <div class="space_div"><br><br><br></div>
+
+            <div id="contact_info">
+
+                <h1>CONTACT</h1>
+                <ul type="none" id="cntct_lc_ul">
+                    <li>
+                        <a href="https://github.com/Lakshya52">
+                            <i class="fa-brands fa-github"></i> Github
+                        </a>
+                    </li>
+                    <!-- <br> -->
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-phone"></i> +91 9667425276
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="https://www.linkedin.com/in/lakshya-mittal-6a2a19232/">
+                            <i class="fa-brands fa-linkedin"></i> LinkedIn
+                        </a>
+                    </li>
+                    <!-- <br> -->
+                    <li>
+                        <a href=""><i class="fa-solid fa-envelope"></i> lakshyachandaliya71@gmail.com</a>
+
+
+                    </li>
+                </ul>
+
+            </div>
+            <br><br>
+            <div class="space_div">
+                <br><br><br>
+            </div>
+
+            <h5>Feel free to Contact/connect with me. Let's embark on this journey together!</h5>
+        </div>
+    </div>
+
+</body>
+
+</html>
